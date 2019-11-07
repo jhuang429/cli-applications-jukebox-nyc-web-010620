@@ -53,16 +53,17 @@ def run
   running = true
   
   while running == true do
-  input = gets.strip
-  if input == "help"
-    help
-  elsif input == "list"
-    list(songs)
-  elsif input == "play"
-    play(songs)
-  elsif input == "exit"
-    exit_jukebox
-    running = false
+    input = gets.strip
+    if input == "help"
+      help
+    elsif input == "list"
+      list(songs)
+    elsif input == "play"
+      play(songs)
+    elsif input == "exit"
+      exit_jukebox
+      running = false
+    end
   end
   
 end
